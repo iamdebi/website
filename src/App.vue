@@ -151,6 +151,28 @@ a {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .about-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    width: 50vw;
+    text-align: center;
+    margin: 0 5% 0 5%;
+
+    max-width: 500px;
+  }
+}
+
 .about {
   width: 50vw;
   text-align: center;
