@@ -8,6 +8,15 @@
       <h2>Junior Software Developer</h2>
     </div>
     <div class="about-contact">
+      <div class="project">
+        <h2>Projects</h2>
+        <a href="#ruby">
+          <h4>Your Bucket List</h4>
+        </a>
+        <a href="#js">
+          <h4>The Healthiest Would You Rather</h4>
+        </a>
+      </div>
       <div class="about">
         <h2>About Me</h2>
         <p>
