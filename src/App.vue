@@ -11,14 +11,11 @@
       <div class="about">
         <h2>About Me</h2>
         <p>
-          Debbie enjoys programming, exersicing, traveling and food.
-          She has recently decided to embark on a more thought provoking
-          career path.
-          Having completed
+          Debbie enjoys programming, exercising, travelling, and food. She has recently decided to embark on a more thought provoking career path. Having completed 
           <a
             href="https://codeclan.com/courses/professional-software-development/"
             target="blank"
-          >CodeClan</a> immersive 16 week Professional Software Development course and is looking forward to challanging herself daily with her new found skils.
+          >CodeClan’s <a> immersive 16 week Professional Software Development course, she is looking forward to challenging herself daily with her newfound skills.</a> immersive 16 week Professional Software Development course and is looking forward to challanging herself daily with her new found skils.
         </p>
       </div>
       <div class="contact">
