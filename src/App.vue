@@ -8,15 +8,6 @@
       <h2>Junior Software Developer</h2>
     </div>
     <div class="about-contact">
-      <div class="project">
-        <h2>Projects</h2>
-        <a href="#ruby">
-          <h4>Your Bucket List</h4>
-        </a>
-        <a href="#js">
-          <h4>The Healthiest Would You Rather</h4>
-        </a>
-      </div>
       <div class="about">
         <h2>About Me</h2>
         <p>
@@ -29,6 +20,11 @@
           >CodeClan’s</a> immersive 16 week Professional Software Development course,
           she is looking forward to challenging herself daily with her newfound skills.
         </p>
+        <div class="project-link">
+          <a href="#project">
+            <h2>Projects</h2>
+          </a>
+        </div>
       </div>
       <div class="contact">
         <h2>Contact</h2>
@@ -98,6 +94,15 @@
         </a>
       </div>
     </div>
+    <div class="projects">
+      <div id="project" class="project">
+        <div class="project-tile">
+          <a href="http://debbie-bucket-list.herokuapp.com/" target="blank">
+            <div class="ruby-tile"></div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -158,6 +163,7 @@ a {
 .about-contact {
   display: flex;
   justify-content: center;
+  padding: 0 0 60px 0;
 }
 
 @media (max-width: 767px) {
@@ -182,12 +188,20 @@ a {
   }
 }
 
+.project-link {
+  border: solid 1px #c8c8c8;
+  margin: 10%;
+}
+
 .about {
   width: 50vw;
   text-align: center;
-  margin: 0 5% 0 5%;
-  padding-left: 80px;
   max-width: 500px;
+  margin-left: 10%;
+}
+
+.contact {
+  margin-left: 5%;
 }
 
 .social-container {
@@ -221,5 +235,23 @@ svg {
   height: 24px;
   width: 24px;
   margin: 0 10px 0 0;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.ruby-tile {
+  width: 300px;
+  height: 300px;
+  background-image: url("../public/ruby_project.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
 }
 </style>
