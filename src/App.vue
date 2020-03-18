@@ -30,28 +30,15 @@
         <Social />
       </div>
     </div>
-    <div class="projects">
-      <div id="project" class="project">
-        <div class="project-tile">
-          <a href="http://debbie-bucket-list.herokuapp.com/" target="blank">
-            <div class="ruby-tile"></div>
-            <p></p>
-          </a>
-        </div>
-
-        <div class="project-tile">
-          <a href="http://debbie-bucket-list.herokuapp.com/" target="blank">
-            <div class="js-tile"></div>
-          </a>
-        </div>
-      </div>
+    <div class="project">
+      <Project-Container />
     </div>
   </div>
 </template>
 
 <script>
 import Social from "./components/social.vue";
-import Project from "./components/project.vue";
+import ProjectContainer from "./components/project.vue";
 
 export default {
   name: "app",
@@ -64,7 +51,7 @@ export default {
 
   components: {
     Social: Social,
-    Project: Project
+    "Project-Container": ProjectContainer
   }
 };
 </script>
@@ -178,23 +165,5 @@ svg {
   height: 24px;
   width: 24px;
   margin: 0 10px 0 0;
-}
-
-.project {
-  display: flex;
-  justify-content: center;
-}
-
-.ruby-tile {
-  width: 300px;
-  height: 300px;
-  background-image: url("../public/ruby_project.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.project-tile {
-  display: flex;
-  justify-content: center;
 }
 </style>
