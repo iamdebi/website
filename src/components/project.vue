@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "thirdPerson"
+  name: "Project"
 };
 </script>
 
