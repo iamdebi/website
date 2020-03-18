@@ -71,4 +71,12 @@ export default {
   justify-content: center;
   display: flex;
 }
+
+/* @media (max-width: 767px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+} */
 </style>
