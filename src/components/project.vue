@@ -65,6 +65,7 @@ export default {
   display: flex;
   justify-content: center;
   margin: 1rem;
+  box-shadow: 5px 10px 20px 5px grey;
 }
 
 .project-header {
