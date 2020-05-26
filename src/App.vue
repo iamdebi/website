@@ -1,6 +1,7 @@
 <template lang="html">
   <div id="app" class="main">
-    <div class="header">
+
+    <section id="header" class="header">
       <div class="header-container">
         <div class="img-container">
           <img class="border circle" src="../public/me.jpg" alt="Debbie Urquhart" />
@@ -18,25 +19,12 @@
           </button>
         </div>
       </div>
-    </div>
+    </section>
+
     <div class="body">
+      <Navigation-Menu />
     <div class="about-contact">
-      <div class="about">
-        <div class="about-info">
-          <h2>About Me</h2>
-          <p>
-            Debbie enjoys programming, exercising, travelling, and food.
-            She has recently decided to embark on a more thought provoking career path.
-            Having completed
-            <a
-              href="https://codeclan.com/courses/professional-software-development/"
-              target="blank"
-            >CodeClan’s</a> immersive 16 week Professional Software Development course,
-            she is looking forward to challenging herself daily with her newfound skills.
-          </p>
-        </div>
-        
-      </div>
+      <About/>
       <div class="contact">
         <Social />
       </div>
@@ -51,6 +39,8 @@
 <script>
 import Social from "./components/social.vue";
 import ProjectContainer from "./components/project.vue";
+import NavigationMenu from "./components/nav.vue"
+import About from "./components/about.vue"
 
 export default {
   name: "app",
@@ -63,8 +53,13 @@ export default {
 
   components: {
     Social: Social,
-    "Project-Container": ProjectContainer
-  }
+    "Project-Container": ProjectContainer,
+    "Navigation-Menu": NavigationMenu,
+    'About': About
+  }, 
+
+  
+  
 };
 </script>
 
