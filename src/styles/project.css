@@ -1,0 +1,48 @@
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.ruby-tile {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../public/ruby_project.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.js-tile {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../public/THWYR.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.java-tile {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../public/TheThing.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  box-shadow: 5px 10px 20px 5px grey;
+}
+
+.project-header {
+  justify-content: center;
+  display: flex;
+}
+
+/* @media (max-width: 767px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+} */
