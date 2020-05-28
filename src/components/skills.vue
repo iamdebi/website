@@ -1,12 +1,7 @@
-<template lang="html">
-  <div>
+<template lang="html">
+  <div class="skills-info">
     <h2>Skills</h2>
-    <ul>
-      <li v-for="item in skills" :key="item.language">
-        <p>{{ item.language }}</p>
-        <p>{{ item.level }}</p>
-      </li>
-    </ul>
+    <div id="bar-div"></div>
   </div>
 </template>
 
@@ -19,28 +14,31 @@ export default {
   data() {
     return {
       skills: [
-        { language: "JavaScript", level: 4 },
-        { language: "Vue", level: 4 },
-        { language: "React", level: 4 },
-        { language: "Angualr", level: 2 },
-        { language: "Css", level: 4 },
-        { language: "Html", level: 4 },
-        { language: "Java", level: 3 },
-        { language: "Ruby", level: 3 }
+        { language: "JavaScript", level: 8 },
+        { language: "Vue", level: 8 },
+        { language: "React", level: 8 },
+        { language: "Angualr", level: 4 },
+        { language: "Css", level: 9 },
+        { language: "Html", level: 9 },
+        { language: "Java", level: 7 },
+        { language: "Ruby", level: 8 },
+        { language: "Python", level: 3 }
       ]
     };
   },
 
-  components: {},
+  components: {
+    GoogleChart
+  },
 
-  computed: {}
+  computed: {},
 
-  //   mounted() {
-  //     GoogleChart.drawChart(skill, "#c6cafb", "#86fc6f");
-  //   }
+  mounted() {
+    GoogleChart.drawBarChart(this.skills);
+  }
 };
 </script>
 
-<style lang="css">
+<style lang="css">
 @import "../styles/skills.css";
 </style>

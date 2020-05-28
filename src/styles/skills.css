@@ -1,0 +1,8 @@
+.skills-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-info {
+  text-align: center;
+}

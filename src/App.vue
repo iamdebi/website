@@ -25,7 +25,7 @@
       <Navigation-Menu />
     <div class="about-skills">
       <About id="about"/>
-      <Skills id="skills" />
+      <Skills class="skills" id="skills" />
     </div>
     <div class="project">
       <Project-Container />

@@ -1,4 +1,4 @@
-<template lang="html">
+<template lang="html">
   <nav id="nav" class="nav">
     <ul>
       <a href="#header">
@@ -21,8 +21,6 @@
 export default {
   name: "NavigationMenu",
 
-  //   data() {},
-
   components: {},
   created() {
     window.addEventListener("scroll", this.handleScroll);
@@ -34,7 +32,6 @@ export default {
 
   methods: {
     handleScroll() {
-      console.log("scroll function");
       var nav = document.getElementById("nav");
       var sticky = nav.offsetTop;
       if (window.pageYOffset > sticky) {
@@ -47,6 +44,6 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css">
 @import "../styles/nav.css";
 </style>
