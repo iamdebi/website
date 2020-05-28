@@ -1,5 +1,6 @@
 .nav {
   background-color: #4f4e4e;
+  z-index: 1;
 }
 
 ul {

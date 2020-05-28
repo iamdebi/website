@@ -17,10 +17,19 @@ export default {
     var options = {
       width: 600,
       height: 400,
-      legend: { position: "top", maxLines: 3 },
+      legend: { position: "none", maxLines: 10 },
       bar: { groupWidth: "75%" },
       colors: ["#7CFC00", "#32CD32"],
-      isStacked: true
+      isStacked: true,
+      animation: {
+        startup: true,
+        duration: 8000,
+        easing: "in"
+      },
+      hAxis: {
+        title: "",
+        ticks: [0, 2, 4, 6, 8, 10]
+      }
     };
 
     var chart = new google.visualization.BarChart(

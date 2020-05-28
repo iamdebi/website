@@ -1,11 +1,12 @@
-<template lang="html">
+<template lang="html">
   <div class="projects-container">
+    <h2 class="project-title">Projects</h2>
     <div id="project" class="project">
       <div v-for="project in projects" :key="project.title">
         <div class="project-tile">
           <a :href="project.href" target="blank">
             <div :class="project.class"></div>
-            <p class="project-header">{{project.title}}</p>
+            <p class="project-header">{{ project.title }}</p>
           </a>
         </div>
       </div>
@@ -41,6 +42,6 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="css" scoped>
 @import "../styles/project.css";
 </style>

@@ -1,7 +1,9 @@
 <template lang="html">
   <div class="skills-info">
     <h2>Skills</h2>
-    <div id="bar-div"></div>
+    <div class="graph">
+      <div id="bar-div"></div>
+    </div>
   </div>
 </template>
 
@@ -14,12 +16,12 @@ export default {
   data() {
     return {
       skills: [
+        { language: "Css", level: 9 },
+        { language: "Html", level: 9 },
         { language: "JavaScript", level: 8 },
         { language: "Vue", level: 8 },
         { language: "React", level: 8 },
         { language: "Angualr", level: 4 },
-        { language: "Css", level: 9 },
-        { language: "Html", level: 9 },
         { language: "Java", level: 7 },
         { language: "Ruby", level: 8 },
         { language: "Python", level: 3 }
