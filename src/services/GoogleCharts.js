@@ -29,7 +29,8 @@ export default {
       hAxis: {
         title: "",
         ticks: [0, 2, 4, 6, 8, 10]
-      }
+      },
+      is3D: true
     };
 
     var chart = new google.visualization.BarChart(
